@@ -19,8 +19,7 @@ const ContactItem = ({ contact }) => {
         <span
           style={{ float: 'right' }}
           className={
-            'badge ' +
-            (type === 'professional' ? 'badge-success' : 'badge-primary')
+            'badge ' + (type === 'To-Read' ? 'badge-success' : 'badge-success')
           }
         >
           {type.charAt(0).toUpperCase() + type.slice(1)}
@@ -29,12 +28,12 @@ const ContactItem = ({ contact }) => {
       <ul className='list'>
         {email && (
           <li>
-            <i className='fas fa-envelope-open' /> {email}
+            <i className='fas fa-user' /> {email}
           </li>
         )}
         {phone && (
           <li>
-            <i className='fas fa-phone' /> {phone}
+            <i className='fas fa-calendar-day' /> {phone}
           </li>
         )}
       </ul>

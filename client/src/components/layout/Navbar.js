@@ -18,7 +18,7 @@ const Navbar = ({ title, icon }) => {
 
   const authLinks = (
     <Fragment>
-      <li>Hello {user && user.name}</li>
+      <li>{user && user.name}</li>
       <li>
         <a onClick={onLogout} href='#!'>
           <i className='fas fa-sign-out-alt' />{' '}
@@ -55,8 +55,8 @@ Navbar.propTypes = {
 };
 
 Navbar.defaultProps = {
-  title: 'Contact Keeper',
-  icon: 'fas fa-id-card-alt'
+  title: 'BooKeeper',
+  icon: 'fas fa-book'
 };
 
 export default Navbar;
